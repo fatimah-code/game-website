@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamestyle.css">
+    <title>gaming web design</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/xbox (1).png" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">game controller</a></li>
+                    <li><a href="">VR accessories</a></li>
+                    <li><a href="">media remotes</a></li>
+                    <li><a href="">others</a></li>
+                </ul>
+            </nav>
+            <img src="images/menulist.jpg" alt="" class="menu-icon"  onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>xbox <br> Dualshock 4</h2>
+                <h3>Wireless controller for xbox</h3>
+                <p>(compatible/genertic)</p>
+                <h4>$42.66</h4>
+                <button type="button">Buy Now <img src="images/arrow-right2.svg" alt="" class="arrow">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="images/microsoft-3581644.jpg" alt="" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/Playstation_Img/add.png" >
+                    <p><small>Add to Cart</small></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="social_media">
+            <img src="images/facebook.png" alt="">
+            <img src="images/instagram.png" alt="">
+            <img src="images/twitter.png" alt="">
+        </div>
+    </div>
+
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            
+            function togglemenu() {
+                if(menuList.style.maxHeight == "0px" )
+                    
+                {
+                    menuList.style.maxHeight = "150px";
+                    
+                    
+                }
+                else if(menuList.style.display === "none")
+                {
+                    menuList.style.display = "block";
+                    
+                }
+                else
+                {
+                    menuList.style.maxHeight = "0px";
+                    menuList.style.display = "none";
+                }
+               // location.reload(); 
+                //if (menuList.style.display === "none") {
+                    //menuList.style.display = "block";
+               // } else {
+                //    menuList.style.display = "none";
+                //}
+        }
+               
+        //location.reload();    
+
+            //function minscreendisply() {
+            //if (menuList.style.display === "none") {
+            //    menuList.style.display = "block";
+            //} else {
+            //    menuList.style.display = "none";
+            //}
+       // }
+     
+            
+            
+        </script>
+    
+</body>
+</html>
